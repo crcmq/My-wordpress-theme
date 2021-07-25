@@ -5,3 +5,7 @@
  This theme is being used in my personal blog website. 
 
  As I didn't add customized fields to this theme, you need to customize this theme by changing the source code. 
+
+ FontAwesome and highlightJS package have been included in this theme. The code of these two packages were not modified.
+ 
+ 
