@@ -221,7 +221,7 @@ nav ul {
     position: fixed;
     right:0;
     top: -72px;
-    
+    padding-right: 30px;
     width: 500px;
     z-index: 50;
     transition: .4s;
@@ -722,7 +722,7 @@ input[type="search"] {
     border-radius: 5px;
     width: 100%;
 }
-#search-btn {
+.search-btn {
     background-image: url(fontawesome/svgs/solid/search.svg);
     box-shadow: none;
     background-color: #cacaca;
@@ -734,7 +734,7 @@ input[type="search"] {
     cursor: pointer;
 }
 
-#search-box #search-btn {
+#search-box .search-btn {
     height: 48px;
     width: 48px;
     background-image: url(fontawesome/svgs/solid/search.svg);
@@ -748,11 +748,11 @@ input[type="search"] {
     cursor: pointer;
 }
 
-#search-box #search-btn:hover {
+#search-box .search-btn:hover {
     background-color: red;
 }
 
-.searchbox-slide-menu #search-btn{
+.searchbox-slide-menu .search-btn{
     height: 32px;
     width: 32px;
     background-image:  url(fontawesome/svgs/solid/search.svg);
@@ -771,7 +771,7 @@ input[type="search"] {
     padding: 0 5%;
 }
 
-#search-btn:hover {
+.search-btn:hover {
     background-color: red;
 }
 
@@ -858,6 +858,10 @@ footer #right-footer ul {
     list-style: none;
     padding: 5px;
     padding-top: 0px;
+}
+
+#right-footer p {
+	font-size: 12px;
 }
 
 footer #social-media a .fa-linkedin,
