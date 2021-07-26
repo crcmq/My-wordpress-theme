@@ -26,7 +26,7 @@
                         <?php echo the_time('Y-m-d');?>
                     </a>
                     <div class="post-excerpt">
-                        <?php echo wp_trim_words(get_the_excerpt(), 30); ?>
+                        <?php echo wp_trim_words(get_the_excerpt(), 150); ?>
                     </div>
                     <div class="post-tags">
                         <?php
