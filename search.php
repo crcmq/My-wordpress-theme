@@ -52,7 +52,9 @@
             </section>
             <?php } else {
                 echo '<div id="no-search-result">Sorry, No Results Found</div>';
-                echo '<div id="search-again"><?php get_search_form(); ?></div>';
+                echo '<div id="search-again">';
+				get_search_form(); 
+				echo '</div>';
                 } 
             ?>
             
