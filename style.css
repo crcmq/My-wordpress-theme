@@ -115,7 +115,6 @@ nav ul {
 }
 
 #slide-out-menu input {
-    width: 85%;
     padding: 8px;
     font-size: 16px;
     text-align: center;
@@ -349,6 +348,7 @@ section {
     padding: 5px;
     margin-top: 10px;
     margin-bottom: 20px;
+	line-height: 1.5;
 }
 
 .post-tags {
@@ -758,7 +758,6 @@ input[type="search"] {
     background-image:  url(fontawesome/svgs/solid/search.svg);
     background-color: white;
     box-shadow: none;
-    
     margin-left: 5px;
     background-size: 60%;
     background-repeat: no-repeat;
