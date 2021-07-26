@@ -76,15 +76,15 @@ function backToTop() {
  */
 let searchIcon = document.getElementById("search-icon");
 let searchBox = document.getElementById("search-box");
-searchBox.style.top = "-72px";
+searchBox.style.top = "-80px";
 searchIcon.addEventListener('click', function(){searchIconFunc();});
 
 function searchIconFunc() {
-    if(searchBox.style.top == "-72px") {
+    if(searchBox.style.top == "-80px") {
         searchBox.style.top = "80px";
     }
     else {
-        searchBox.style.top = "-72px";
+        searchBox.style.top = "-80px";
         
     }
 }
