@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>
             Mengqiu (Roger) Chen
@@ -8,6 +8,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content ="ie=edge">
         <link rel="icon" href="<?php echo get_template_directory_uri() . '/image/logo.jpg'; ?>" type="image/x-icon">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-WS51X455SM"></script>
+			<script>
+  				window.dataLayer = window.dataLayer || [];
+  				function gtag(){dataLayer.push(arguments);}
+  				gtag('js', new Date());
+
+  				gtag('config', 'G-WS51X455SM');
+			</script>
         <?php wp_head();?>
     </head>
     <body>
@@ -28,7 +37,7 @@
         <nav id="top-menu">
             <div id="web-icon">
                 <a href="<?php echo site_url('/home');?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/image/20150901033150 (2).JPG" alt="site logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/image/largelogo.jpg" alt="site logo">
                 </a>
                 <a href="<?php echo site_url('/home');?>">
                     <div id="web-title">
