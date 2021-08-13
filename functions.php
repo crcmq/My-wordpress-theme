@@ -3,7 +3,6 @@
 // adding the css and js files
 
 function mytheme_setup() {
-    wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu+Mono&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
     wp_enqueue_style('fontawesome',  get_template_directory_uri() . '/fontawesome/css/all.css');
 	wp_enqueue_style('highlight',  get_template_directory_uri() . '/highlight/styles/night-owl.min.css');
     wp_enqueue_style('style', get_stylesheet_uri());
@@ -89,3 +88,4 @@ function search_filter($query) {
     }
 }
 add_filter('pre_get_posts', 'search_filter');
+

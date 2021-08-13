@@ -21,7 +21,7 @@
             </div>
         </footer>
         <i id="back-to-top-icon" class="fa fa-arrow-up"></i>
-
+        
         <?php wp_footer(); ?>
     </body>
 </html>

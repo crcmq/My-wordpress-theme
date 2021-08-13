@@ -1,5 +1,10 @@
-<?php get_header(); ?>   
-
+<?php get_header(); ?> 
+<script> 
+    document.getElementById("top-menu").classList.remove("page"); 
+</script>
+<div id="banner">  
+            <div id="page-title"><h1>Mengqiu's Blog</h1></div>
+</div>
 <!-- Main section -->
         <main id="main">
             <a href="<?php echo site_url('/blog') ?>" class="front-section-title">Blogs</a>

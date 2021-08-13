@@ -3,7 +3,7 @@
 
 <div id="banner" class="inactive"></div>
 <main id="main">
-<div id="post-container"> 
+<div id="post-container" style="margin-left:10%; margin-right:10%;"> 
             <?php while (have_posts()) {
                 the_post();
             ?>          
@@ -19,14 +19,7 @@
                                               
             </section>
             <?php } ?>
-            <aside id="side-bar">
-
-                <?php 
-                    get_search_form();
-                    dynamic_sidebar('main_sidebar'); 
-                ?>
-                <p></p>
-            </aside>
+            
         </div>  
 </main>
 

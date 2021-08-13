@@ -7,7 +7,7 @@ Version: 1.0.0
 
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     background: #f0f0f0;
@@ -43,7 +43,7 @@ input, textarea {
 }
 /* Navigation */
 nav {
-    height: 72px;
+    height: 60px;
     background: transparent;
     position: fixed;
     z-index: 100;
@@ -56,6 +56,8 @@ nav {
 }
 
 nav a {
+	display: table-cell;
+	vertical-align: middle;
     padding: 0 32px;
     color: white;
     transition: .4s;
@@ -125,18 +127,21 @@ nav ul {
     height: 100%;
     display: flex;    
 }
-#web-icon a {
+#web-icon>a {
     padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #web-icon img {
-    height: 72px;
-    width: 72px;
+    height: 60px;
+    width: 60px;
     border-radius: 100px;
 }
 
 #web-title {
-    font-size: x-large;
+    display:table-cell;
     padding: 13px;  
     color: white;    
 }
@@ -192,12 +197,12 @@ nav ul {
 #banner {
     display: flex;
     height: 100vh;
+    width: auto;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.15) url(image/DSC_2388-1.jpg) ;
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
     background-blend-mode: overlay;
     color: white;
@@ -219,12 +224,12 @@ nav ul {
 #search-box {
     position: fixed;
     right:0;
-    top: -72px;
+    top: -90px;
     padding-right: 30px;
     width: 500px;
-    z-index: 50;
+    z-index: -100;
     transition: .4s;
-    display: block;
+   
 }
 
 
@@ -285,7 +290,7 @@ section {
     border-radius: 10px;
 }
 .post-categories {
-    font-family: 'Ubuntu Condensed', sans-serif;   
+    font-family: 'Tahoma', sans-serif;   
     color: white;   
     text-decoration: none;
     list-style: none;
@@ -299,7 +304,7 @@ section {
     width:fit-content;
 }
 .post-categories a {
-    font-family: 'ubuntu condensed', sans-serif;
+    font-family: 'Tahoma', sans-serif;
     background: #0077B5;
     color: white;
     padding: 5px; 
@@ -326,7 +331,7 @@ section {
 }
 
 .post-type {
-    font-family: 'ubuntu condensed', sans-serif;
+    font-family: 'Tahoma', sans-serif;
     color: white;
     font-size: 20px;
     padding: 5px;
@@ -337,7 +342,7 @@ section {
 
 
 .post-time {
-    font-family: 'ubuntu condensed', sans-serif;
+    font-family: 'Tahoma', sans-serif;
     color:rgba(119, 119, 119, 1);
     text-align: center;
     font-size: 16px;
@@ -352,7 +357,7 @@ section {
 }
 
 .post-tags {
-    font-family: 'ubuntu condensed', sans-serif;
+    font-family: 'Tahoma', sans-serif;
     float: left;
     display: flex;
     flex-wrap: wrap;
@@ -406,10 +411,14 @@ section {
     flex-wrap: wrap;
 }
 
-
+.hljs {
+	border-radius: 10px;
+	margin: 0 10px;
+	font-size: 14px;
+}
 
 .single-post-time {
-    font-family: 'ubuntu condensed', sans-serif;
+    font-family: 'Tahoma', sans-serif;
     color: black;
     font-size: 16px;
     padding: 8px 0;
@@ -431,7 +440,7 @@ section {
 }
 
 .single-post-category a{
-    font-family: 'ubuntu condensed', sans-serif;
+    font-family: 'Tahoma', sans-serif;
     background: #0077B5;
     color: white;
     border-radius: 5px;
@@ -449,13 +458,16 @@ section {
     padding-right: 2px;
 }
 .single-post-tags {
-    font-family: 'ubuntu condensed', sans-serif;
+    font-family: 'Tahoma', sans-serif;
     display: flex;
     flex-wrap: wrap;
     padding: 0 20px;
     width: auto;
 }
 .single-post-tags a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 5px;
     margin: 2px 3px;
     color: black;
@@ -472,6 +484,9 @@ section {
 }
 
 /* Comment */
+.comments-area {
+    width: 100%;
+}
 .avatar {
     border-radius: 100px;
 }
@@ -500,13 +515,13 @@ textarea#comment {
 }
 
 #commentform textarea {
-    width: 80%;
     height: 150px;
     margin: 5px;
     border: solid 1px black;
     border-radius: 5px;
     box-shadow: none;
     padding: 16px;
+    resize: none;
 }
 
 
@@ -543,7 +558,7 @@ textarea#comment {
 
 .comment-body {
     
-    margin: 10px 0px;
+    margin: 10px;
     border-radius: 10px;
     background-color:#cacaca;
     display: flex;
@@ -557,7 +572,7 @@ textarea#comment {
 }
 
 .comment-body .reply {
-    font-family: 'ubuntu condensed', sans-serif;
+    font-family: 'Tahoma', sans-serif;
     font-size: 12px;
     
     
@@ -622,7 +637,7 @@ textarea#comment {
 }
 
 p.comment-notes {
-    font-family: 'ubuntu condensed', sans-serif;
+    font-family: 'Tahoma', sans-serif;
     font-size: 18px;
 }
 
@@ -652,6 +667,12 @@ p.comment-notes {
 }
 #side-bar li a:hover {
     text-decoration: underline;
+}
+.widget_recent_entries ul {
+    list-style: circle;
+}
+.widget_recent_entries ul li {
+    padding: 5px 0;
 }
 #cat {
     padding:5px;
@@ -690,14 +711,12 @@ p.comment-notes {
     padding: 0 10%;
 }
 
-.wp-block-tag-cloud {
+.wp-block-tag-cloud a {
     margin-top: 0px;
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
-.wp-block-tag-cloud a {
-    font-size: 14px;
-}
+
 
 .tag-cloud-link {
     background: #8fd3f8;
@@ -929,7 +948,7 @@ footer #social-media ul li:hover a .fa-github {
     }  
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     #page-title h1{
         font-size: 32px;
     }
@@ -1006,18 +1025,10 @@ footer #social-media ul li:hover a .fa-github {
         transition: .4s;
     }
 }
-
-@media (max-width: 321px) {
-    nav {
-        height: 60px;
-    }  
-    #slide-out-menu {
-        margin-top: 60px;
-    }
-
-    #web-icon img {
-        width: 60px;
-        height: 60px;
-    }
+@media (min-width: 851px) {
+	#blogpost {
+		width:1vw;
+	}
 }
+
 

@@ -76,15 +76,15 @@ function backToTop() {
  */
 let searchIcon = document.getElementById("search-icon");
 let searchBox = document.getElementById("search-box");
-searchBox.style.top = "-80px";
+searchBox.style.top = "-90px";
 searchIcon.addEventListener('click', function(){searchIconFunc();});
 
 function searchIconFunc() {
-    if(searchBox.style.top == "-80px") {
-        searchBox.style.top = "80px";
+    if(searchBox.style.top == "-90px") {
+        searchBox.style.top = "50px";
     }
     else {
-        searchBox.style.top = "-80px";
+        searchBox.style.top = "-90px";
         
     }
 }
@@ -110,4 +110,5 @@ function displayTopMenu() {
         slideMenu.style.height = "0%";
     }   
 }
+
 

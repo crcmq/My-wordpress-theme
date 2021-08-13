@@ -1,8 +1,6 @@
 <?php get_header(); ?>
-<script> 
-    document.getElementById("banner").classList.add("inactive");
+<script>  
     document.getElementById("top-menu").classList.add("page");
-    document.getElementById("banner").innerHTML = "";
 </script>
 <main id="main">
 <div class="container-404">

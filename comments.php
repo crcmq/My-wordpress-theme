@@ -16,17 +16,17 @@ if ( post_password_required() )
             'author' =>
                 '<input placeholder="Name" id="author" name="author" type="text" value="' . 
                 esc_attr( $commenter['comment_author']) .
-                '" size="30"' . ' />',
+                '" size="30" pattern="[A-Za-z.\- _]+" required' . ' />',
             'email' =>
-                '<input placeholder="Email"  id="email" name="email" type="text" value="' .
+                '<input placeholder="Email"  id="email" name="email" type="email" value="' .
                 esc_attr( $commenter['comment_author_email']) .
-                '" size="30"' . ' />',
+                '" size="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]" required' . ' />',
             'cookies' => ''
         );
 
         $args = array (
                         'fields' => $fields,
-                        'comment_field' => '<textarea placeholder="Your comment" id="comment" name="comment" cols="50" rows="8" maxlength="65525" required="required"></textarea>',
+                        'comment_field' => '<textarea placeholder="Your comment" id="comment" name="comment" cols="50" rows="8" maxlength="65525" required></textarea>',
                         'comment_notes_before' => '<p class="comment-notes">Your email address will not be published.</p>'
                         );
         comment_form($args); 
@@ -61,4 +61,5 @@ if ( post_password_required() )
  
     
  
-</div><!-- #comments -->
+</div>
+<script>document.getElementById("commentform").removeAttribute("novalidate");</script><!-- #comments -->

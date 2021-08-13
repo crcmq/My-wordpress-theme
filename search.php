@@ -1,9 +1,7 @@
 <?php get_header(); ?>
-<script> 
-    document.getElementById("banner").classList.add("inactive");
-    document.getElementById("top-menu").classList.add("page");
-    document.getElementById("banner").innerHTML = "";
-</script>
+
+
+<div id="banner" class="inactive"></div>
 <main id="main">
             <a class="section-title">Search Results for "<?php echo get_search_query(); ?>"</a>
        
